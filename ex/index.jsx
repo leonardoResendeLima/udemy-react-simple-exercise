@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Component from './componente'
 
 ReactDOM.render(
-    <h1>Ola React</h1>,
+    <Component value='Show'/>,
     document.getElementById('app')
 )
 
