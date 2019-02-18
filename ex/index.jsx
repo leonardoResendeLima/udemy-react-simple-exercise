@@ -5,7 +5,7 @@ import Member from './member'
 import ClassComponent from './classComponent'
 
 ReactDOM.render(
-    <ClassComponent value="Ola seu Bucetudo" />,
+    <ClassComponent initialValue={10} label="Contador" />,
     document.getElementById('app')
 )
 
