@@ -14,7 +14,7 @@ export default class ClassComponent extends Component {
             value: this.state.value + delta
         })
     }
-
+    
     render() {
         return (
             <div>
