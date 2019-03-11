@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Family from './family'
-import Member from './member'
-import ClassComponent from './classComponent'
-import Field from "./field";
+import { Provider } from "react-redux";
+import { createStore, combineReducers } from "redux";
+import  counterReducers  from "./counterReducers";
 
-// ReactDOM.render(
-//     <ClassComponent initialValue={10} label="Contador" />,
-//     document.getElementById('app')
-// )
+import Counter from "./counter";
+
+const reducers = combineReducers({
+    counter: counterReducers
+})
 
 ReactDOM.render(
-    <Field initialValue="" />,
+    <Provider store={createStore(reducers)}>
+        <Counter />
+    </Provider>,
     document.getElementById('app')
 )
 
