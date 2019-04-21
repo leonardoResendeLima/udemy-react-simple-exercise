@@ -3,6 +3,6 @@ import { childrenWithProps } from "../utils/reactUtils";
 
 export default props => (
     <div>
-        { childrenWithProps(props) }
+        { childrenWithProps(props) } 
     </div>
 )
